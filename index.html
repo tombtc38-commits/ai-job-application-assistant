@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Job Application Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+  <div class="container">
+    <h1>AI Job Application Assistant</h1>
+    <p>Enter a job description and your background to prepare for your application.</p>
+
+    <label for="job">Job Description</label>
+    <textarea id="job" placeholder="Paste the job description here..."></textarea>
+
+    <label for="background">Your Background</label>
+    <textarea id="background" placeholder="Describe your experience, skills, and background..."></textarea>
+
+    <button id="generate">Generate Application Help</button>
+
+    <div id="result" class="hidden">
+      <h2>Matching Skills</h2>
+      <div id="skills"></div>
+
+      <h2>Interview Questions</h2>
+      <ul id="questions"></ul>
+
+      <h2>Cover Letter</h2>
+      <pre id="letter"></pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
